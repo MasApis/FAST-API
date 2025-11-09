@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = load_model("model.h5")
+model = load_model("face_classifier.h5")
 class_names = ["abdul", "farhan"]  # sesuaikan
 
 @app.post("/predict")
